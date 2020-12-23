@@ -6,6 +6,7 @@
 .DS_Store
 wordpress/*
 !wordpress/.keep
+!wordpress/Dockerfile
 mysql/*
 !mysql/.keep
 logs/nginx/*
