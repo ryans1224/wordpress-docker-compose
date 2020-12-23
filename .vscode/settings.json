@@ -1,0 +1,24 @@
+{
+    "emeraldwalk.runonsave": {
+        
+        "commands": [
+            {
+                "match": ".*",
+                "isAsync": true,
+                "cmd": "echo 'I run for all files.'"
+            },
+            {
+                "match": "\\.scss$",
+                "cmd": "npm run dev --prefix wordpress/wp-content/themes/memberlab-theme/src"
+            },
+            {
+                "match": "\\.js$",
+                "cmd": "npm run dev --prefix wordpress/wp-content/themes/memberlab-theme/src"
+            },
+            {
+                "match": ".*",
+                "cmd": "echo 'I am ${env.USERNAME}.'"
+            }
+        ]
+    },
+}
